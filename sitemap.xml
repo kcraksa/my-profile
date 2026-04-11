@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+  Sitemap for Hanenda Services
+  Update BASE_URL when you get a custom domain.
+  Submit to Google Search Console: https://search.google.com/search-console
+  Submit to Bing Webmaster Tools: https://www.bing.com/webmasters
+  ============================================================ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://hanenda-services.vercel.app/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <!-- Alternate language versions (hreflang) -->
+    <xhtml:link rel="alternate" hreflang="id" href="https://hanenda-services.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanenda-services.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanenda-services.vercel.app/"/>
+  </url>
+
+  <!-- Section anchors (helps Google index specific sections) -->
+  <url>
+    <loc>https://hanenda-services.vercel.app/#tech</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://hanenda-services.vercel.app/#portfolio</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hanenda-services.vercel.app/#about</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://hanenda-services.vercel.app/#contact</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

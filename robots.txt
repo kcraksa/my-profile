@@ -1,0 +1,22 @@
+# robots.txt — Hanenda Services
+# https://www.robotstxt.org
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Point to sitemap
+Sitemap: https://hanenda-services.vercel.app/sitemap.xml
+
+# Disallow dev/config files
+User-agent: *
+Disallow: /vercel.json
+Disallow: /design/
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Crawl-delay for well-behaved bots (not Googlebot)
+User-agent: *
+Crawl-delay: 10
