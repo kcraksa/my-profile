@@ -298,7 +298,8 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background-color: #faf8ff; color: #191b23; }
+    /* Base typography: explicit 16 px base size and 1.5 line-height for readability */
+    body { font-family: 'Inter', sans-serif; background-color: #faf8ff; color: #191b23; font-size: 1rem; line-height: 1.5; }
     h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
     .tech-chip { font-family: 'JetBrains Mono', monospace; }
     .glass-nav { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
@@ -319,6 +320,9 @@
 
     /* Subtle card hover glow */
     .project-card:hover { box-shadow: 0 20px 60px rgba(0, 74, 198, 0.08); }
+
+    /* WCAG 2.2 – focus-visible outline for keyboard navigation (SC 2.4.7 / 2.4.11) */
+    a:focus-visible, button:focus-visible { outline: 2px solid #004ac6; outline-offset: 3px; border-radius: 4px; }
   </style>
 </head>
 
@@ -675,7 +679,7 @@
           <p class="text-on-surface-variant text-lg">Building enterprise-grade solutions since 2017.</p>
         </div>
 
-        <div class="relative border-l-2 border-primary-fixed ml-4 md:ml-8 space-y-12">
+        <div class="relative border-l-2 border-outline ml-4 md:ml-8 space-y-12">
           
           <!-- PT. Serasi Autoraya (Current) -->
           <div class="relative pl-8 reveal">
@@ -705,7 +709,7 @@
 
           <!-- Ciputra Group -->
           <div class="relative pl-8 reveal" style="transition-delay:0.1s">
-            <span class="absolute -left-[11px] top-0 w-5 h-5 bg-primary-fixed rounded-full border-4 border-white shadow-sm"></span>
+            <span class="absolute -left-[11px] top-0 w-5 h-5 bg-secondary rounded-full border-4 border-white shadow-sm"></span>
             <div class="flex flex-col md:flex-row md:items-center gap-4 mb-2">
               <h3 class="text-2xl font-bold text-on-surface">Ciputra Group</h3>
             </div>
@@ -723,7 +727,7 @@
 
           <!-- Novell Pharmaceutical -->
           <div class="relative pl-8 reveal" style="transition-delay:0.2s">
-            <span class="absolute -left-[11px] top-0 w-5 h-5 bg-primary-fixed rounded-full border-4 border-white shadow-sm"></span>
+            <span class="absolute -left-[11px] top-0 w-5 h-5 bg-secondary rounded-full border-4 border-white shadow-sm"></span>
             <div class="flex flex-col md:flex-row md:items-center gap-4 mb-2">
               <h3 class="text-2xl font-bold text-on-surface">Novell Pharmaceutical Laboratories</h3>
             </div>
@@ -872,7 +876,7 @@
                       id="name" name="name" type="text"
                       placeholder="John Doe"
                       required
-                      class="w-full px-5 py-4 rounded-xl border border-outline-variant focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
+                      class="w-full px-5 py-4 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
                     />
                   </div>
                   <div class="space-y-1.5">
@@ -881,7 +885,7 @@
                       id="email" name="email" type="email"
                       placeholder="john@example.com"
                       required
-                      class="w-full px-5 py-4 rounded-xl border border-outline-variant focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
+                      class="w-full px-5 py-4 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
                     />
                   </div>
                 </div>
@@ -890,7 +894,7 @@
                   <input
                     id="subject" name="subject" type="text"
                     placeholder="New Web Application Project"
-                    class="w-full px-5 py-4 rounded-xl border border-outline-variant focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
+                    class="w-full px-5 py-4 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all text-on-surface placeholder:text-outline"
                   />
                 </div>
                 <div class="space-y-1.5">
@@ -900,7 +904,7 @@
                     rows="4"
                     placeholder="Tell me about your application requirements..."
                     required
-                    class="w-full px-5 py-4 rounded-xl border border-outline-variant focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none text-on-surface placeholder:text-outline"
+                    class="w-full px-5 py-4 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-none text-on-surface placeholder:text-outline"
                   ></textarea>
                 </div>
                 <button
